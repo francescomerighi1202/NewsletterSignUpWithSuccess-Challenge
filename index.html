@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+  <main class="card">
+    <section class="content-left">
+      <div class="header-content">
+        <h1 class="title">Stay updated!</h1>
+        <p class="header-text">Join 60,000+ product managers receiving monthly updates on:</p>
+      </div>
+
+      <div class="body-content">
+        <div class="list-item">
+          <img src="./assets/images/icon-success.svg" alt="check icon">
+          <p class="item-text">Product discovery and building what matters</p>
+        </div>
+        <div class="list-item">
+          <img src="./assets/images/icon-success.svg" alt="check icon">
+          <p class="item-text">Measuring to ensure updates are a success</p>
+        </div>
+        <div class="list-item">
+          <img src="./assets/images/icon-success.svg" alt="check icon">
+          <p class="item-text">And much more!</p>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <form class="form" novalidate autocomplete="off">
+          <div class="labels-container">
+            <label for="email" class="form-label">Email address</label>
+            <p class="error-text">Valid e-mail required.</p>
+          </div>
+          <input type="email" id="email" class="form-input" placeholder="email@company.com">
+          <button type="submit" class="form-button">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </section>
+    <section class="content-right">
+      <img class="illustration-desk" src="./assets/images/illustration-sign-up-desktop.svg" alt="dashboard illustration">
+      <img class="illustration-mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="dashboard illustration">
+    </section>
+  </main>
+
+  <main class="success-card" style="display: none;">
+    <section class="icon-success">
+      <img src="./assets/images/icon-success.svg" alt="check icon">
+    </section>
+
+    <section class="success-content">
+      <h1 class="title-success">Thanks for subscribing!</h1>
+      <p class="success-text">A confirmation email has been sent to <span class="user-email"></span>. 
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="success-button">Dismiss message</button>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
